@@ -1,5 +1,7 @@
 # frontal-labs CI templates
 
+![Frontal Banner](banner.png)
+
 Shared GitHub Actions workflows for the frontal-labs org. One place holds the
 logic. Other repos add a short caller that uses a versioned workflow from here.
 
