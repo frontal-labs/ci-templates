@@ -1,0 +1,18 @@
+{
+  "$schema": "./repos.schema.json",
+  "prTools": ["frontal", "graph-om", "source", "factory"],
+  "topPullRequests": ["frontal"],
+  "topIssues": [
+    "cli",
+    "mcp-server",
+    "ai-sdk-provider",
+    "ggml-node",
+    "sandbox",
+    "sdk-typescript",
+    "sdk-python",
+    "sdk-go",
+    "sdk-rust",
+    "sdk-java"
+  ],
+  "upgradeDigest": ["graph-om"]
+}

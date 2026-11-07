@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repos config",
+  "description": "Which org repos receive which shared tool.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["prTools", "topPullRequests", "topIssues", "upgradeDigest"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "prTools": { "$ref": "#/$defs/repoList" },
+    "topPullRequests": { "$ref": "#/$defs/repoList" },
+    "topIssues": { "$ref": "#/$defs/repoList" },
+    "upgradeDigest": { "$ref": "#/$defs/repoList" }
+  },
+  "$defs": {
+    "repoList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._-]+$",
+        "minLength": 1,
+        "maxLength": 100
+      }
+    }
+  }
+}
