@@ -1,4 +1,4 @@
-# frontal-labs CI templates
+# Frontal CI Templates
 
 ![Frontal Banner](banner.png)
 
